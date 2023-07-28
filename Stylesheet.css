@@ -123,14 +123,17 @@ aside {
 .page-info {
     font-size: var(--fs-500);
     max-width: 70ch;
+    margin-right: var(--_gap-size);
 }
 
 .job-experience {
     display: grid;
+    margin-right: var(--_gap-size);
     justify-content: start;
     gap: 1rem;
     grid-auto-flow: column;
     overflow-x: auto;
+    overflow-y: hidden;
     position: relative;
     padding-block: 1rem;
     scrollbar-color: var(--clr-accent-400) var(--clr-primary-800);
@@ -152,7 +155,7 @@ aside {
 
 .job-experience::after {
     content: "";
-    width: 50px;
+    width: 0;
     background: transparent;
 }
 
